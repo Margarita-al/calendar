@@ -19,18 +19,22 @@ Create an automated system that:
 
 ## The Working Mechanism
 
-### Step 1: Create a project in Google Cloud Console
- :white_small_square: Creating a project to access the Google Sheets and Google Calendar API.
- :white_small_square: Enabling the API.
- :white_small_square: Getting the credentials file.json (OAuth) or service-account.json.
+### :white_small_square: Step 1: Create a project in Google Cloud Console
+ - Creating a project to access the Google Sheets and Google Calendar API.
+ - Enabling the API.
+ - Getting the credentials file.json (OAuth) or service-account.json.
 
-### Step 2: Setting up the Google Spreadsheet
- :white_small_square: Creating a table with the necessary columns.
- :white_small_square: We give access to the service account (or the user, if you use OAuth).
- :white_small_square: We enter information about applications.
+### :white_small_square: Step 2: Setting up the Google Spreadsheet
+ - Creating a table with the necessary columns.
+ - We give access to the service account (or the user, if you use OAuth).
+ - We enter information about applications.
 
 
-:white_small_square:
+### :white_small_square: Step 3: Running the Python script
+ - The first time you run the script, it asks you to log in through the browser → it gives you a link → you click "Allow".
+ - After that, the token file is saved.json — it stores the token for subsequent launches.
+ - The script reads the data from the table.
+ - Creates an event in the calendar for each row without an Event ID.
 -------
 
 ## :high_brightness: Results:
