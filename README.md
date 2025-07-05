@@ -1,4 +1,4 @@
-# calendar
+# :clock1: Calendar
 ----------
 
 ## Goals of the Project:
